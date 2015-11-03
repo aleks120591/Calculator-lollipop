@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Display -->
+    <color name="display_color">#ffffff</color>
+
+    <!-- History -->
+    <color name="history_input">#202020</color>
+    <color name="history_result">#737373</color>
+    <color name="history_fade">#000000</color>
+
+    <!-- Keyboard -->
+    <color name="pad_advanced_text_color_normal">#91000000</color>
+    <color name="pad_advanced_text_color_disabled">#33000000</color>
+    <color name="pad_text_color_disabled">#33FFFFFF</color>
+    <color name="pad_text_color_normal">#ffffff</color>
+    <color name="pressed_color">#66ffffff</color>
+    <color name="widget_text_color">#ffffff</color>
+
+    <!-- Graph colors -->
+    <color name="graph_background">#f5f5f5</color>
+    <color name="graph_axis">#cecece</color>
+    <color name="graph_line">@color/calculator_accent_color</color>
+    <color name="graph_text">#cecece</color>
+    <color name="mini_graph_text">#00cecece</color>
+</resources>

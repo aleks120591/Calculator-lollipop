@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- History -->
+    <dimen name="history_text_size">30sp</dimen>
+    <dimen name="history_graph_height">100dp</dimen>
+    <dimen name="history_graph_margin">90dp</dimen>
+
+    <!-- Display -->
+    <dimen name="display_height">350dp</dimen>
+    <dimen name="display_height_with_shadow">356dp</dimen>
+    <dimen name="display_formula_height">215dp</dimen>
+    <dimen name="display_result_height">135dp</dimen>
+    <dimen name="display_shadow">6dp</dimen>
+</resources>

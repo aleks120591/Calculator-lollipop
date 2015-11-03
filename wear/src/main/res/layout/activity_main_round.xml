@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.android2.calculator3.view.CalculatorPadViewPager
+        android:id="@+id/panelswitch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="80dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="86dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:orientation="horizontal"
+        android:background="@drawable/white_card">
+
+        <ViewSwitcher
+            android:id="@+id/display"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:inAnimation="@anim/floating_slide_in"
+            android:outAnimation="@anim/floating_slide_out">
+
+            <com.android2.calculator3.view.FormattedNumberEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="23sp"
+                android:textColor="@color/display_formula_text_color"
+                android:background="@android:color/transparent"
+                android:inputType="text|textNoSuggestions"
+                android:enabled="false"
+                android:paddingTop="30dp"/>
+
+            <com.android2.calculator3.view.FormattedNumberEditText
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textSize="23sp"
+                android:textColor="@color/display_formula_text_color"
+                android:background="@android:color/transparent"
+                android:inputType="text|textNoSuggestions"
+                android:enabled="false"
+                android:paddingTop="30dp"/>
+
+        </ViewSwitcher>
+
+        <com.android2.calculator3.view.BackspaceImageButton
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:contentDescription="@string/del"
+            android:src="@drawable/backspace_btn"
+            android:tint="@color/display_formula_text_color"
+            android:background="@drawable/pad_button_advanced_ripple"
+            android:layout_marginTop="30dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

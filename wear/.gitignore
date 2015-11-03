@@ -1,0 +1,4 @@
+/build
+*.iml
+mobile-release.apk
+wear-release.apk

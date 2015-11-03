@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2014 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<com.android2.calculator3.view.DisplayOverlay
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:graph="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/display"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/display_shadow">
+
+        <com.android2.calculator3.view.GraphView
+            android:id="@+id/mini_graph"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="onButtonClick"
+            android:visibility="gone"
+            graph:showGrid="false"
+            graph:showInlineNumbers="true"
+            graph:showOutline="false"
+            graph:panEnabled="false"
+            graph:zoomEnabled="false"
+            graph:backgroundColor="@color/graph_background"
+            graph:gridColor="@color/graph_axis"
+            graph:graphColor="@color/graph_line"
+            graph:numberTextColor="@color/mini_graph_text"/>
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:id="@+id/main_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <View
+            android:id="@+id/the_card"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/display_height_with_shadow"
+            android:background="@drawable/white_card"/>
+
+        <RelativeLayout
+            android:id="@+id/calculations"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/display_height">
+
+            <com.android2.calculator3.view.CalculatorEditText
+                android:id="@+id/formula"
+                style="@style/Theme.Calculator.Display.Main.Formula"
+                android:inputType="text|textNoSuggestions"
+                android:textColor="@color/display_formula_text_color"
+                android:textCursorDrawable="@drawable/cursor"
+                android:layout_height="@dimen/display_formula_height" />
+
+            <com.android2.calculator3.view.CalculatorEditText
+                android:id="@+id/result"
+                style="@style/Theme.Calculator.Display.Main.Result"
+                android:layout_below="@id/formula"
+                android:focusable="false"
+                android:textColor="@color/display_result_text_color"
+                android:layout_height="@dimen/display_result_height" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/display_formula_text_color"/>
+
+        <FrameLayout
+            android:id="@+id/the_clear_animation"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/display_height"/>
+
+    </FrameLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/historyRecycler"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</com.android2.calculator3.view.DisplayOverlay>

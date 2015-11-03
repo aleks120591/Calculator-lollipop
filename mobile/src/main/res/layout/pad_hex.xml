@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2014 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<com.android2.calculator3.view.CalculatorPadLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/pad_hex"
+    style="@style/PadLayoutStyle.Advanced"
+    android:background="@color/pad_advanced_background_color">
+
+    <com.android2.calculator3.view.Button
+        android:id="@+id/A"
+        style="@style/PadButtonStyle.Advanced"
+        android:onClick="onButtonClick"
+        android:text="@string/A" />
+
+    <com.android2.calculator3.view.Button
+        android:id="@+id/B"
+        style="@style/PadButtonStyle.Advanced"
+        android:onClick="onButtonClick"
+        android:text="@string/B" />
+
+    <com.android2.calculator3.view.Button
+        android:id="@+id/C"
+        style="@style/PadButtonStyle.Advanced"
+        android:onClick="onButtonClick"
+        android:text="@string/C" />
+
+    <com.android2.calculator3.view.Button
+        android:id="@+id/D"
+        style="@style/PadButtonStyle.Advanced"
+        android:onClick="onButtonClick"
+        android:text="@string/D" />
+
+    <com.android2.calculator3.view.Button
+        android:id="@+id/E"
+        style="@style/PadButtonStyle.Advanced"
+        android:onClick="onButtonClick"
+        android:text="@string/E" />
+
+    <com.android2.calculator3.view.Button
+        android:id="@+id/F"
+        style="@style/PadButtonStyle.Advanced"
+        android:onClick="onButtonClick"
+        android:text="@string/F" />
+
+    <com.android2.calculator3.view.Button
+        android:id="@+id/op_xand"
+        style="@style/PadButtonStyle.Advanced"
+        android:onClick="onButtonClick"
+        android:text="\u21D4"
+        android:visibility="invisible" />
+
+    <com.android2.calculator3.view.Button
+        android:id="@+id/op_xor"
+        style="@style/PadButtonStyle.Advanced"
+        android:onClick="onButtonClick"
+        android:text="\u2295"
+        android:visibility="invisible" />
+
+    <com.android2.calculator3.view.Button
+        android:id="@+id/op_implies"
+        style="@style/PadButtonStyle.Advanced"
+        android:onClick="onButtonClick"
+        android:text="\u2192"
+        android:visibility="invisible" />
+
+    <com.android2.calculator3.view.Button
+        android:id="@+id/op_and"
+        style="@style/PadButtonStyle.Advanced"
+        android:onClick="onButtonClick"
+        android:text="\u2227"
+        android:visibility="invisible" />
+
+    <com.android2.calculator3.view.Button
+        android:id="@+id/op_or"
+        style="@style/PadButtonStyle.Advanced"
+        android:onClick="onButtonClick"
+        android:text="\u2228"
+        android:visibility="invisible" />
+
+    <com.android2.calculator3.view.Button
+        android:id="@+id/op_not"
+        style="@style/PadButtonStyle.Advanced"
+        android:onClick="onButtonClick"
+        android:text="\u00AC"
+        android:visibility="invisible" />
+
+    <com.android2.calculator3.view.Button
+        android:id="@+id/dec"
+        style="@style/PadButtonStyle.Advanced.Toggle"
+        android:contentDescription="@string/desc_dec"
+        android:onClick="onButtonClick"
+        android:text="@string/dec" />
+
+    <com.android2.calculator3.view.Button
+        android:id="@+id/hex"
+        style="@style/PadButtonStyle.Advanced.Toggle"
+        android:contentDescription="@string/desc_hex"
+        android:onClick="onButtonClick"
+        android:text="@string/hex" />
+
+    <com.android2.calculator3.view.Button
+        android:id="@+id/bin"
+        style="@style/PadButtonStyle.Advanced.Toggle"
+        android:contentDescription="@string/desc_bin"
+        android:onClick="onButtonClick"
+        android:text="@string/bin" />
+
+</com.android2.calculator3.view.CalculatorPadLayout>

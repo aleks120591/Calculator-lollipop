@@ -1,0 +1,43 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:graph="http://schemas.android.com/apk/res-auto"
+    android:layout_marginLeft="@dimen/history_margin"
+    android:layout_marginRight="@dimen/history_margin"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.android2.calculator3.view.GraphView
+        android:id="@+id/graph"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/display_result_height"
+        android:layout_gravity="bottom"
+        android:layout_marginTop="@dimen/history_graph_margin"
+        android:layout_marginBottom="@dimen/display_shadow"
+        graph:showGrid="false"
+        graph:showInlineNumbers="true"
+        graph:showOutline="false"
+        graph:panEnabled="false"
+        graph:zoomEnabled="false"
+        graph:backgroundColor="@color/graph_background"
+        graph:gridColor="@color/graph_axis"
+        graph:graphColor="@color/graph_line"
+        graph:numberTextColor="@color/mini_graph_text"/>
+
+    <com.android2.calculator3.view.HistoryLine
+        android:id="@+id/history_line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/white_card">
+
+        <TextView
+            android:id="@+id/historyExpr"
+            style="@style/HistoryText.Query"/>
+
+        <TextView
+            android:id="@+id/historyResult"
+            style="@style/HistoryText.Result"/>
+
+    </com.android2.calculator3.view.HistoryLine>
+
+</FrameLayout>
